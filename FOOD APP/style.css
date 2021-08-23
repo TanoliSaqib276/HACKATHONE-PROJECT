@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Kaushan+Script&display=swap');
+/*
+.form{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    border: 2px solid red;
+}
+.form-group{
+    width: 30%;
+    
+} */
+
+body{
+    /* margin: 0px;
+    padding: 0px; */
+    height: 100vh;
+    background-image: url('./images/bg1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+.form {
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 100px; */
+    /* height: 100% ; */
+    /* background-image: url('./images/photo-1519211975560-4ca611f5a72a.jpeg');
+    background-repeat: no-repeat;
+    background-position: center; */
+    /* background-attachment: fixed; */
+    /* background-size: cover; */
+}
+
+.inner {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* height: 100% ; */
+    border: 1px outset gray;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 30%;
+    min-width: fit-content;
+    height: 70%;
+}
+
+.inner h3 {
+    text-align: center;
+}
+
+.inner h3:hover {
+    border-bottom: 2px double rgba(71, 161, 189, 0.753);
+}
+
+.inner button {
+    text-align: center;
+}
+
+.inner button:hover {
+    background-color: burlywood;
+}
+
+.shinwari {
+    font-family: 'Kaushan Script', cursive;
+    color: lightgray;
+    font-style: italic;
+    
+    
+}

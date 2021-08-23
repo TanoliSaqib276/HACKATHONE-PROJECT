@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTRAUNTS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+        body {
+            /* margin: 0px;
+            padding: 0px; */
+            height: 100vh;
+            background-image: url('./images/mainrst.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .main-rst {
+            /* position: relative;*/
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .row {
+            margin: 0 auto;
+            /* position: relative;
+            top: 250px; */
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            border: 2px solid olivedrab;
+            border-radius: 20px;
+            background-color: transparent;
+            background-color: rgba(62, 100, 94, 0.8);
+
+
+        }
+        h2{
+           
+            /* bottom: 300px; */
+            margin: 0 auto;
+            color: palegoldenrod;
+            background-color: transparent;
+            background-color: rgba(62, 100, 94, 0.185);
+            /* margin-top: 150px; */
+            z-index: 999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5em;
+            font-family: 'Kaushan Script', cursive;
+         
+            
+
+            
+            
+        }
+        h2:hover{
+            border-bottom: 2px solid rgb(122, 2, 2);
+        }
+
+        .thumbnail {
+            text-align: center;
+
+        }
+
+        .caption a {
+            color: wheat;
+            font-size: 1.5em;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        .caption a:hover {
+            background-color: thistle;
+        }
+    </style>
+    <!-- %%%%%%%%%%%%%%% FIREBASE %%%%%%%%%%%%%%% -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+
+    <script>
+
+        var firebaseConfig = {
+            apiKey: "AIzaSyAPYqu7fuHArPYWF46MjcaxuladRXGMm5I",
+            authDomain: "saylani-hackathon-7.firebaseapp.com",
+            projectId: "saylani-hackathon-7",
+            storageBucket: "saylani-hackathon-7.appspot.com",
+            messagingSenderId: "239259285426",
+            appId: "1:239259285426:web:2018d355f3c556a9bc96ab",
+            measurementId: "G-ET5FXW36K3"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+</head>
+
+<body>
+    
+    <div class="main-rst">
+        <h2>All You Need Is Here</h2>
+       
+        <div class="row w-75 p-3 ">
+           
+            
+            <div class="col-md-4">
+                <div class="thumbnail">
+
+                    <img src="./images/rst1.jpg" alt="Lights" style="width:100%">
+                    <div class="caption">
+                        <a href="./Burger.html">Proceed To Burger O'clock</a>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+
+                    <img src="./images/rst2.jpg" alt="Nature" style="width:100%">
+                    <div class="caption">
+                        <a href="./kfc.html">Proceed To KFC</a>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+
+                    <img src="./images/rst3.jpg" alt="Fjords" style="width:100%">
+                    <div class="caption">
+                        <a href="./shinwari.html">Proceed To SHINWARI</a>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <!-- %%%%%%%%%%%%%%%%%%%  BOTSTRAP JS  %%%%%%%%%%%%%%%%%%%%%%% -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+       
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+        body {
+            background-color: lightgrey;
+        }
+
+        .h3 {
+            text-align: center;
+            margin: 0 auto;
+            font-family: 'Kaushan Script', cursive;
+            font-size: 2em;
+        }
+        
+    </style>
+    <!-- %%%%%%%%%%%%%%% FIREBASE %%%%%%%%%%%%%%% -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+
+    <script>
+
+        var firebaseConfig = {
+            apiKey: "AIzaSyAPYqu7fuHArPYWF46MjcaxuladRXGMm5I",
+            authDomain: "saylani-hackathon-7.firebaseapp.com",
+            projectId: "saylani-hackathon-7",
+            storageBucket: "saylani-hackathon-7.appspot.com",
+            messagingSenderId: "239259285426",
+            appId: "1:239259285426:web:2018d355f3c556a9bc96ab",
+            measurementId: "G-ET5FXW36K3"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+  
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="./images/kfc-png-logo.png" class="imgLogo" style="width: 100px; height: 70px;" ></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 1.5em;">
+                        Categories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        <a class="dropdown-item" href="./kfc.html">Fast Food</a>
+                    </div>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 1.5em;">
+                        Dashboard
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./pending.html">Pending Order</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./accepted.html">Accepted Order </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./delivered.html">Delivered Order</a>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+    <h3 class="h3 font-size:8vw;">KFC</h3>
+    <div class="card-group container" style="margin-top: 50px;">
+
+        <div class="card">
+            <img class="card-img-top"
+                src="https://cdn-images-fishry.azureedge.net/product/Crispy-Box-500x360-5a9a770-kfc.png/xs"
+                alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Peri Bites</h5>
+                
+                <p class="card-text">RS:499</p>
+                <button>ORDER NOW</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://cdn-images-fishry.azureedge.net/product/Krunch-500x360-a6056d0-kfc.png/xs"
+                alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Crispy Box</h5>
+
+                <p class="card-text"><small class="text-muted">RS 499</small></p>
+                <button>ORDER NOW</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://cdn-images-fishry.azureedge.net/product/Rice---Spice-500x360-38e7f70-kfc.png/xs"
+                alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Chicken Rice</h5>
+
+                <p class="card-text">RS:450</p>
+                <button>ORDER NOW</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- &&&&&&&&&&&&&&&&&&&  BOOSTRAP JS  &&&&&&&&&&&&&&&&&&&&&&&&  -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
